@@ -1,0 +1,73 @@
+@use '../utils/variables' as *;
+
+.header {
+	padding: 1rem 2rem;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	background-color: $dark-grey;
+
+	& nav {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		& button {
+			& .avatar {
+				width: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+		}
+		.menu {
+			position: relative;
+			& .menu-dropdown {
+				position: absolute;
+				width: 10rem;
+				background-color: lighten($grey, 20);
+				color: $grey;
+				border-radius: 10px;
+				top: 60px;
+				left: -7.5rem;
+				& h4 {
+					text-align: center;
+					padding: 0.5rem;
+				}
+				& > ul {
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					padding: 1rem 0;
+					& li {
+						line-height: 1.8rem;
+						transition: background-color 150ms ease-in;
+
+						&:hover {
+							background-color: $light-grey;
+						}
+					}
+				}
+				& div {
+					padding: 1rem;
+					text-align: end;
+					& .fa-power-off {
+						color: rgb(253, 37, 37);
+						transition: color 100ms ease-in;
+						&:hover {
+							color: red;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	& ul {
+		display: flex;
+		list-style: none;
+		& > li {
+			font-size: 1.1rem;
+			padding: 0 1rem;
+		}
+	}
+}

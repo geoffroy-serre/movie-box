@@ -1,0 +1,25 @@
+@use '../utils/variables' as *;
+
+section {
+	margin-top: 2rem;
+	text-align: center;
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	& input[type='text'] {
+		color: $dark-grey;
+		margin-top: 2rem;
+		width: 30rem;
+		padding: 1rem;
+		border: none;
+		outline: none;
+		border-radius: 5px;
+	}
+}
+
+.total-results {
+	text-align: center;
+	margin: 1rem 0;
+}

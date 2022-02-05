@@ -1,0 +1,17 @@
+@use '../utils/variables' as *;
+
+.card-list {
+	margin: 2rem;
+	// width: 80vw;
+	display: grid;
+	grid-template-columns: repeat(4, 15%);
+	justify-content: center;
+	gap: $grid-spacing;
+}
+
+#results {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

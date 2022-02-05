@@ -1,0 +1,22 @@
+.login-btn-google {
+	width: 100%;
+	background-color: hsl(214, 82%, 51%);
+	height: 3rem;
+	color: white;
+	font-weight: 500;
+	font-size: 1.3rem;
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 150ms ease-in;
+	border-radius: 5px;
+	&:hover {
+		background-color: hsl(214, 70%, 54%);
+	}
+
+	svg {
+		width: 1.5rem;
+		margin-right: 0.5rem;
+	}
+}
